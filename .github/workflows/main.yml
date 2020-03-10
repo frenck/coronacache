@@ -10,10 +10,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Setting up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
       - name: Create publish directory
         run: mkdir public
       - name: Download latest information
